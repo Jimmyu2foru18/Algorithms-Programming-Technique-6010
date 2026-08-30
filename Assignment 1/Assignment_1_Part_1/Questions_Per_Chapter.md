@@ -24,6 +24,8 @@
 
 **Q:** Why is `//` called "floor division"? What does it do with negative numbers?
 
+---
+
 # Chapter 3 Questions
 
 **Q:** What is a list and how is it different from a variable?
@@ -69,6 +71,8 @@
 **T/F:** `my_list[:]` creates a copy of the list.
 
 **T/F:** `my_list[-1]` accesses the last item.
+
+---
 
 # Chapter 4 Questions
 
@@ -117,6 +121,8 @@
 **T/F:** `range(1, 21, 2)` produces even numbers.
 
 **T/F:** `len()` works on both lists and tuples.
+
+---
 
 # Chapter 5 Questions
 

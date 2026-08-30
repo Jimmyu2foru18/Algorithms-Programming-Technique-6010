@@ -12,8 +12,6 @@ Write a separate program to accomplish each of these exercises. Save each progra
 
 **2-2. Simple Messages:** Assign a message to a variable, and print that message. Then change the value of the variable to a new message and print the new message.
 
-### Try It Yourself
-
 Save each of the following exercises as a separate file with a name like `name_cases.py`. If you get stuck, take a break or see the suggestions in Appendix C.
 
 **2-3. Personal Message:** Use a variable to represent a person's name and print a message to that person. Your message should be simple, such as, "Hello Eric, would you like to learn some Python today?"
@@ -30,8 +28,6 @@ Albert Einstein once said, "A person who never made a mistake never tried anythi
 
 **2-7. Stripping Names:** Use a variable to represent a person's name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, `"\t"` and `"\n"`, at least once. Print the name once, so the whitespace around the name is displayed. Then print the name using each of the three stripping functions, `lstrip()`, `rstrip()`, and `strip()`.
 
-### Try It Yourself
-
 **2-8. Number Eight:** Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in `print()` calls to see the results. You should create four lines that look like this:
 
 ```python
@@ -42,11 +38,7 @@ Your output should simply be four lines with the number 8 appearing once on each
 
 **2-9. Favorite Number:** Use a variable to represent your favorite number. Then, using that variable, create a message that reveals your favorite number. Print that message.
 
-### Try It Yourself
-
 **2-10. Adding Comments:** Choose two of the programs you've written, and add at least one comment to each. If you don't have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
-
-### Try It Yourself
 
 **2-11. Zen of Python:** Enter `import this` into a Python terminal session and skim through the additional principles
 
@@ -61,8 +53,6 @@ Try these short programs to get some firsthand experience with Python's lists. Y
 **3-2. Greetings:** Start with the list you used in Exercise 3-1, but instead of just printing each person's name, print a message to them. The text of each message should be the same, but each message should be personalized with the person's name.
 
 **3-3. Your Own List:** Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as "I would like to own a Honda motorcycle."
-
-### Try It Yourself
 
 The following exercises are a bit more complex than those in Chapter 2, but they give you an opportunity to use lists in all of the ways described.
 
@@ -89,8 +79,6 @@ The following exercises are a bit more complex than those in Chapter 2, but they
 - Print a message to each of the two people still on your list, letting them know they're still invited.
 - Use `del` to remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 
-### Try It Yourself
-
 **3-8. Seeing the World:** Think of at least five places in the world you'd like to visit.
 
 - Store the locations in a list. Make sure the list is not in alphabetical order.
@@ -108,8 +96,6 @@ The following exercises are a bit more complex than those in Chapter 2, but they
 
 **3-10. Every Function:** Think of something you could store in a list. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you'd like. Write a program that creates a list containing these items and then uses each function introduced in this chapter at least once.
 
-### Try It Yourself
-
 **3-11. Intentional Error:** If you haven't received an index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
 
 ## Chapter 4
@@ -126,8 +112,6 @@ The following exercises are a bit more complex than those in Chapter 2, but they
 - Modify your program to print a statement about each animal, such as `A dog would make a great pet.`
 - Add a line at the end of your program stating what these animals have in common. You could print a sentence such as `Any of these animals would make a great pet!`
 
-### Try It Yourself
-
 **4-3. Counting to Twenty:** Use a for loop to print the numbers from 1 to 20, inclusive.
 
 **4-4. One Million:** Make a list of the numbers from one to one million, and then use a for loop to print the numbers. (If the output is taking too long, stop it by pressing ctrl-C or by closing the output window.)
@@ -141,8 +125,6 @@ The following exercises are a bit more complex than those in Chapter 2, but they
 **4-8. Cubes:** A number raised to the third power is called a cube. For example, the cube of 2 is written as `2**3` in Python. Make a list of the first 10 cubes (that is, the cube of each integer from 1 through 10), and use a for loop to print out the value of each cube.
 
 **4-9. Cube Comprehension:** Use a list comprehension to generate a list of the first 10 cubes.
-
-### Try It Yourself
 
 **4-10. Slices:** Using one of the programs you wrote in this chapter, add several lines to the end of the program that do the following:
 
@@ -158,15 +140,11 @@ The following exercises are a bit more complex than those in Chapter 2, but they
 
 **4-12. More Loops:** All versions of `foods.py` in this section have avoided using for loops when printing to save space. Choose a version of `foods.py`, and write two for loops to print each list of foods.
 
-### Try It Yourself
-
 **4-13. Buffet:** A buffet-style restaurant offers only five basic foods. Think of five simple foods, and store them in a tuple.
 
 - Use a for loop to print each food the restaurant offers.
 - Try to modify one of the items, and make sure that Python rejects the change.
 - The restaurant changes its menu, replacing two of the items with different foods. Add a line that rewrites the tuple, and then use a for loop to print each of the items on the revised menu.
-
-### Try It Yourself
 
 **4-14. PEP 8:** Look through the original PEP 8 style guide at <https://python.org/dev/peps/pep-0008/>. You won't use much of it now, but it might be interesting to skim through it.
 
@@ -202,8 +180,6 @@ print(car == 'audi')
 - Test whether an item is in a list
 - Test whether an item is not in a list
 
-### Try It Yourself
-
 **5-3. Alien Colors #1:** Imagine an alien was just shot down in a game. Create a variable called `alien_color` and assign it a value of `'green'`, `'yellow'`, or `'red'`.
 
 - Write an `if` statement to test whether the alien's color is green. If it is, print a message that the player just earned 5 points.
@@ -236,8 +212,6 @@ print(car == 'audi')
 - Make a list of your three favorite fruits and call it `favorite_fruits`.
 - Write five if statements. Each should check whether a certain kind of fruit is in your list. If the fruit is in your list, the if block should print a statement, such as `You really like bananas!`
 
-### Try It Yourself
-
 **5-8. Hello Admin:** Make a list of five or more usernames, including the name `'admin'`. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the list, and print a greeting to each user:
 
 - If the username is `'admin'`, print a special greeting, such as `Hello admin, would you like to see a status report?`
@@ -260,8 +234,6 @@ print(car == 'audi')
 - Store the numbers 1 through 9 in a list.
 - Loop through the list.
 - Use an if-elif-else chain inside the loop to print the proper ordinal ending for each number. Your output should read `"1st 2nd 3rd 4th 5th 6th 7th 8th 9th"`, and each result should be on a separate line.
-
-### Try It Yourself
 
 **5-12. Styling if statements:** Review the programs you wrote in this chapter, and make sure you styled your conditional tests appropriately.
 
