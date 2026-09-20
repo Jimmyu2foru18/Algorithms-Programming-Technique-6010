@@ -1,0 +1,7 @@
+ticker,company,quarter,period_end,report_date,metric,value,display,qoq_change,yoy_change,basis
+MSFT,Microsoft Corporation,2026 Q1,2026-03-31,2026-04-29,revenue,82886000000,$82.89B,+2.0%,+18.3%,
+MSFT,Microsoft Corporation,2026 Q1,2026-03-31,2026-04-29,eps,4.27,$4.27,−17.2%,+23.4%,
+MSFT,Microsoft Corporation,2026 Q1,2026-03-31,2026-04-29,free-cash-flow,15803000000,$15.80B,+168.7%,−22.1%,
+MSFT,Microsoft Corporation,2026 Q1,2026-03-31,2026-04-29,gross-margin,67.63,67.6%,−0.4 pp,−1.1 pp,
+MSFT,Microsoft Corporation,2026 Q1,2026-03-31,2026-04-29,fcf-margin,19.065945998117897,19.1%,+11.8 pp,−9.9 pp,
+MSFT,Microsoft Corporation,2026 Q1,2026-03-31,2026-04-29,pe-ratio,22.03,22.0,−27.2%,−23.7%,

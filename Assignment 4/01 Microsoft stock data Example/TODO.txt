@@ -1,0 +1,37 @@
+First, read Chapter 2 of the numpy book. This serves mostly as a review of last week while introducing a few additional concepts.
+
+Second, install the yfinance package and run the provided code snippet. This script downloads Microsoft stock data for 2023, converts the dates and adjusted close prices into NumPy arrays, and prints the first five items from each array.
+
+Third, use matplotlib to plot the stock values in two different ways. You must display the data together on a single graph and split it across separate subcharts.
+
+yfinance as yf
+
+import numpy as np
+
+# Define ticker and date range
+
+ticker = 'MSFT'
+
+start_date = '2023-01-01'
+
+end_date = '2024-01-01'
+
+# Download data as a pandas DataFrame
+
+df = yf.download(ticker, start=start_date, end=end_date)
+
+# Convert the 'Adj Close' column to a NumPy array for time series analysis
+
+time_series_data = df['Adj Close'].to_numpy()
+
+# Convert the index to a NumPy array of dates
+
+time_series_dates = df.index.to_numpy()
+
+# Display the data
+
+print(f"NumPy time series for {ticker}:\n")
+
+print("Dates (first 5):\n", time_series_dates[:5])
+
+print("\nPrices (first 5):\n", time_series_data[:5])

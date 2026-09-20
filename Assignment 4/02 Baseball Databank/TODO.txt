@@ -1,0 +1,53 @@
+# Baseball Databank Analysis & Python Practice Guide
+
+Practice applying NumPy arrays, list comprehensions, loops, NumPy math tools, and Matplotlib graphing using data structures modeled after the Lahman Baseball Databank (`Salaries.csv`).
+
+### 1. List Comprehension & Salary Filtering
+* Scenario: You are given a list of player salaries (in millions) for a specific team: salaries_mil = [0.55, 1.2, 15.5, 0.7, 22.0, 3.4, 0.5].
+* Task: Write a single-line list comprehension that filters this list to return only the salaries greater than 2.0 million.
+* Analysis Question: How many players make more than 2.0 million, and what is the resulting filtered list of high earners?
+
+### 2. NumPy Array Creation & Indexing
+* Scenario: You extract player salaries across 4 specific years for 3 marquee franchises as a 2D NumPy array:
+  import numpy as np
+  franchise_salaries = np.array([
+      [45.2, 55.0, 68.4, 85.1],
+      [30.1, 42.5, 50.0, 61.3],
+      [88.0, 110.5, 135.2, 175.9]
+  ])
+* Task: Use array slicing to extract all salary records for the third franchise (row index 2).
+* Analysis Question: What was the peak salary recorded by this franchise across the four years?
+
+### 3. NumPy Math Tools & Statistical Comparison
+* Salaries Scenario: You have two NumPy arrays containing player salaries from two different decades for a team:
+  decade_90s = np.array([0.5, 1.2, 2.8, 3.5, 5.0, 0.8])
+  decade_20s = np.array([2.5, 4.0, 12.5, 15.0, 22.0, 3.2])
+* Task: Use NumPy math tools (np.mean() and np.std()) to calculate the average salary and standard deviation for both decades.
+* Analysis Question: Which decade exhibited a higher average salary, and which showed greater dispersion (higher standard deviation) among player paychecks?
+
+### 4. Loops & Vectorized Operations Comparison
+* Scenario: You need to inflate a list of historic player salaries to account for modern economic adjustment: base_salaries = [1.0, 2.5, 5.0, 10.0]. (Adjustment multiplier: 1.45).
+* Task: 
+  1. Write a for loop to iterate through the list and build a new list of adjusted salaries.
+  2. Perform the exact same calculation using a vectorized NumPy operation on np.array(base_salaries).
+* Analysis Question: Contrast the two techniques and explain why the NumPy vectorized route handles large arrays more efficiently than a standard Python for loop.
+
+### 5. Matplotlib Line Graph & Trend Analysis
+* Scenario: You track a team's total payroll (in millions) over a 5-year span: years = [2018, 2019, 2020, 2021, 2022] and total_payroll = [120, 135, 110, 150, 185].
+* Task: Use Matplotlib to plot a line graph mapping years to total payroll. Add a title, x-axis label, y-axis label, and grid lines.
+* Analysis Question: Between which two consecutive years did the team experience the sharpest drop in total payroll expenditure?
+
+### 6. Matplotlib Scatterplot & Correlation Comparison
+* Scenario: An analyst evaluates team performance by plotting team home runs against total team payroll: hr_count = [150, 180, 210, 240, 260] against team_payroll = [90, 110, 130, 160, 200].
+* Task: Create a Matplotlib scatterplot mapping home runs to team payroll. Include axis labels and a descriptive title.
+* Analysis Question: Looking at the scatterplot layout, what type of directional relationship (positive, negative, or none) appears to exist between a team's home run total and its payroll?
+
+### 7. NumPy Conditional Filtering & Math Tools
+* Scenario: You load an array of player salaries: team_salaries = np.array([0.7, 1.5, 3.2, 5.0, 12.0, 18.5]).
+* Task: Use NumPy math tools to calculate the median salary via `np.median()`, then write a boolean mask or conditional statement to isolate salaries exceeding that median.
+* Analysis Question: How many players earn a salary greater than the team median, and what are their specific salary values?
+
+### 8. Matplotlib Bar Chart & Categorical Analysis
+* Scenario: You group a team's roster into salary tiers where `tiers = ['Under $1M', '$1M-$5M', '$5M-$15M', 'Over $15M']` and `player_counts = [10, 14, 7, 4]`.
+* Task: Use Matplotlib to plot a bar chart displaying player counts across these salary tiers. Include a title, axis labels, and grid lines.
+* Analysis Question: Which salary tier represents the largest portion of the team's roster based on the bar chart?
