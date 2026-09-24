@@ -1,0 +1,81 @@
+CRN,Subject,Course,Section,Course Title,CrossList,Modality,Cap,Start_Date,End_Date,Begin_Time,End_Time,Days,Building,Room,Room_Desc,Room_Cap,Instructor
+21187,CS,5910,1,Systems Design & Implement,,On Campus,30,1/25/2027,5/18/2027,1440,1620,MW,NAB,104,Computer Lab,30,"Balyan, Renu"
+21308,CS,6110,G02,Data Analytics I,,On Campus,20,1/25/2027,5/18/2027,1800,2030,M,NAB,1115,Tablet Classroom,47,"Balyan, Renu"
+20108,CS,5710,1,Computer Networks,,On Campus,25,1/25/2027,5/18/2027,1630,1810,TR,NAB,101,Computer Lab,32,"Basawapatna, Ashok"
+21875,CS,3810,1,Data Structures & Algorithms,,On Campus,27,1/25/2027,5/18/2027,1440,1620,TR,NAB,101,Computer Lab,32,"Basawapatna, Ashok"
+21158,MA,2050,1,Quantitative Decision Making,,On Campus,27,1/25/2027,5/18/2027,1820,2000,TR,NAB,1113,Tablet Classroom,55,"Berbari, Betty"
+20045,CS,2511,2,Computer Programming II,,On Campus,23,1/25/2027,5/18/2027,950,1130,TR,NAB,103,Computer Lab,38,"Cruz, Brandon"
+20045,CS,2511,2,Computer Programming II,,On Campus,23,1/25/2027,5/18/2027,1140,1240,TR,NAB,103,Computer Lab,38,"Cruz, Brandon"
+20238,CS,2511,1,Computer Programming II,,On Campus,23,1/25/2027,5/18/2027,800,940,MW,NAB,103,Computer Lab,38,"Cruz, Brandon"
+20238,CS,2511,1,Computer Programming II,,On Campus,23,1/25/2027,5/18/2027,950,1050,MW,NAB,103,Computer Lab,38,"Cruz, Brandon"
+20893,CS,2510,2,Computer Programming I,,On Campus,25,1/25/2027,5/18/2027,1140,1320,MW,NAB,111,CIS Computer Lab,26,"Cruz, Brandon"
+20893,CS,2510,2,Computer Programming I,,On Campus,25,1/25/2027,5/18/2027,1330,1430,MW,NAB,111,CIS Computer Lab,26,"Cruz, Brandon"
+20008,MA,2090,1,Precalculus,,On Campus,30,1/25/2027,5/18/2027,950,1130,MW,NAB,1119,Table Classroom,46,"D'Ambroise, Jennie"
+20341,MA,5320,1,Advanced Calculus I,,On Campus,20,1/25/2027,5/18/2027,1140,1320,MW,NAB,2129,Tablet Classroom,30,"D'Ambroise, Jennie"
+20111,CS,4550,1,Database Management Systems,,On Campus,20,1/25/2027,5/18/2027,1140,1320,TR,NAB,111,CIS Computer Lab,26,"Gupta, Naresh"
+21172,CS,7920,G01,Analytics Project II,,On Campus,20,1/25/2027,5/18/2027,1820,2050,M,NAB,3103,Tablet Classroom,22,"Gupta, Naresh"
+21873,CS,5610,1,Operating Systems,,On Campus,20,1/25/2027,5/18/2027,1630,1810,MW,NAB,3104,Computer Lab,22,"Gupta, Naresh"
+20381,CS,3911,1,C++in Object Oriented Design,,On Campus,25,1/25/2027,5/18/2027,1630,1810,MW,NAB,104,Computer Lab,30,"Khalefa, MohamedE"
+21309,CS,6030,G02,Data Warehousing,,On Campus,20,1/25/2027,5/18/2027,1800,2030,R,NAB,3117,Tablet Classroom,44,"Khalefa, MohamedE"
+21668,CS,4550,2,Database Management Systems,,On Campus,14,1/25/2027,5/18/2027,1820,2000,MW,NAB,104,Computer Lab,30,"Khalefa, MohamedE"
+20007,MA,2080,3,Precalc/Business & Economics,,On Campus,30,1/25/2027,5/18/2027,1440,1620,TR,NAB,2109,Tablet Classroom,40,"Kim, Myong-HiNina"
+20320,MA,2300,2,Calc/Business & Economics,,On Campus,25,1/25/2027,5/18/2027,950,1130,MW,NAB,2123,Table Classroom,40,"Kim, Myong-HiNina"
+21878,MA,2300,HY1,Calc/Business & Economics,,Hybrid,25,1/25/2027,5/18/2027,1630,1810,T,CC/I-L,L138,Classroom,35,"Kim, Myong-HiNina"
+21038,MA,2000,6,Applied Statistics,,On Campus,35,1/25/2027,5/18/2027,1140,1320,MW,NAB,1113,Tablet Classroom,55,"Maritato, Kevin"
+21118,MA,6520,G01,Statistics II,,On Campus,20,1/25/2027,5/18/2027,1800,2030,T,NAB,3117,Tablet Classroom,44,"Maritato, Kevin"
+21197,MA,5220,1,Advanced Statistics II,,On Campus,30,1/25/2027,5/18/2027,1800,2030,T,CC/E-H,H220,Classroom,33,"Maritato, Kevin"
+20924,MA,6200,G01,Algebra,,On Campus,20,1/25/2027,5/18/2027,1630,1900,W,NAB,3121,Tablet Classroom,46,"More, Yogesh"
+20511,MA,3160,2,Linear Algebra,,On Campus,22,1/25/2027,5/18/2027,1440,1620,MW,NAB,1108,Tablet Classroom/Seminar,22,"More, Yogesh"
+21874,MA,6150,G01,Geometry,,On Campus,20,1/25/2027,5/18/2027,1630,1900,M,NAB,1108,Tablet Classroom/Seminar,22,"More, Yogesh"
+20636,CS,3611,1,Advanced C#,,On Campus,20,1/25/2027,5/18/2027,1820,2000,MW,NAB,109,CIS Computer Lab,32,"Park, Do Young"
+21178,CS,4720,1,Internet & Web Tech,,On Campus,25,1/25/2027,5/18/2027,1140,1320,MW,NAB,104,Computer Lab,30,"Park, Do Young"
+21877,CS,4501,1,Software Engineering,,On Campus,25,1/25/2027,5/18/2027,1440,1620,MW,NAB,111,CIS Computer Lab,26,"Park, Do Young"
+20005,MA,1020,HY2,College Algebra,,Hybrid,60,1/25/2027,5/18/2027,1440,1620,TR,NAB,1113,Tablet Classroom,55,"Prabhu, AshokSanjeev"
+20702,MA,2090,2,Precalculus,,On Campus,30,1/25/2027,5/18/2027,1140,1320,TR,NAB,1113,Tablet Classroom,55,"Prabhu, AshokSanjeev"
+20926,MA,2000,3,Applied Statistics,,On Campus,35,1/25/2027,5/18/2027,950,1130,TR,NAB,2117,Tablet Classroom,42,"Prabhu, AshokSanjeev"
+21039,MA,2000,7,Applied Statistics,,On Campus,35,1/25/2027,5/18/2027,1630,1810,TR,NAB,2117,Tablet Classroom,42,"Prabhu, AshokSanjeev"
+20012,MA,3030,1,Discrete Mathematics,,On Campus,25,1/25/2027,5/18/2027,1140,1320,MW,NAB,2123,Table Classroom,40,"Ralston, David"
+20015,MA,4360,1,Differential Equations,,On Campus,25,1/25/2027,5/18/2027,1140,1320,TR,CC/I-L,L138,Classroom,35,"Ralston, David"
+20765,MA,2310,1,Calc & Analytic Geometry I,,On Campus,20,1/25/2027,5/18/2027,1440,1620,TR,NAB,2111,Tablet Classroom,38,"Ralston, David"
+20046,CS,3620,1,Computer Architecture I,,On Campus,25,1/25/2027,5/18/2027,1440,1620,TR,NAB,109,CIS Computer Lab,32,"Rayana, Shebuti"
+20790,CS,5810,1,Data Mining,,On Campus,18,1/25/2027,5/18/2027,950,1130,TR,NAB,111,CIS Computer Lab,26,"Rayana, Shebuti"
+21041,CS,4200,1,Mobile Programming via Android,,On Campus,20,1/25/2027,5/18/2027,950,1130,MW,NAB,109,CIS Computer Lab,32,"Rayana, Shebuti"
+20001,MA,1020,2,College Algebra,,On Campus,30,1/25/2027,5/18/2027,1140,1320,MW,NAB,1117,Tablet Classroom,55,"Rydzewski, Monika"
+20003,MA,1020,3,College Algebra,,On Campus,30,1/25/2027,5/18/2027,950,1130,TR,NAB,2123,Table Classroom,40,"Rydzewski, Monika"
+20004,MA,1020,HY1,College Algebra,,Hybrid,55,1/25/2027,5/18/2027,950,1130,MW,NAB,1113,Tablet Classroom,55,"Rydzewski, Monika"
+20014,MA,3210,HY1,Intro to Prob & Statistics,,Hybrid,25,1/25/2027,5/18/2027,800,950,R,NAB,1119,Table Classroom,46,"Sanacory, Frank"
+20321,MA,3160,1,Linear Algebra,,On Campus,17,1/25/2027,5/18/2027,950,1130,TR,CC/I-L,L322,Classroom,18,"Sanacory, Frank"
+21686,MA,3210,HY2,Intro to Prob & Statistics,,Hybrid,25,1/25/2027,5/18/2027,800,950,T,NAB,1119,Table Classroom,46,"Sanacory, Frank"
+20011,MA,2310,2,Calc & Analytic Geometry I,,On Campus,25,1/25/2027,5/18/2027,950,1130,MW,NAB,2129,Tablet Classroom,30,"Techanie, Geta"
+20431,MA,2310,3,Calc & Analytic Geometry I,,On Campus,25,1/25/2027,5/18/2027,950,1130,TR,NAB,1103,Tablet Classroom,26,"Techanie, Geta"
+20675,MA,3520,1,Transition to Advanced Math,,On Campus,20,1/25/2027,5/18/2027,1140,1320,MW,NAB,2101,Tablet Classroom,44,"Techanie, Geta"
+20010,MA,2090,4,Precalculus,,On Campus,30,1/25/2027,5/18/2027,1440,1620,TR,NAB,3111,Tablet Classroom,40,"Werner, Nicholas"
+21441,CS,4030,0X1,Combinatorics & Graph Theory,CSMA,On Campus,15,1/25/2027,5/18/2027,1630,1810,TR,NAB,1115,Tablet Classroom,47,"Werner, Nicholas"
+21505,MA,2090,6,Precalculus,,On Campus,30,1/25/2027,5/18/2027,1140,1320,TR,NAB,2107,Tablet Classroom,36,"Werner, Nicholas"
+21548,MA,4030,0X1,Combinatorics & Graph Theory,CSMA,On Campus,15,1/25/2027,5/18/2027,1630,1810,TR,NAB,1115,Tablet Classroom,47,"Werner, Nicholas"
+20013,MA,3030,2,Discrete Mathematics,,On Campus,25,1/25/2027,5/18/2027,1440,1620,TR,NAB,1115,Tablet Classroom,47,"Zhao, Lan"
+20082,MA,2320,1,Calc & Analytic Geometry II,,On Campus,20,1/25/2027,5/18/2027,1440,1620,MW,CC/I-L,L312,Classroom,27,"Zhao, Lan"
+20002,MA,1020,1,College Algebra,,On Campus,35,1/25/2027,5/18/2027,1820,2000,MW,NAB,2117,Tablet Classroom,42,
+20009,MA,2090,3,Precalculus,,On Campus,30,1/25/2027,5/18/2027,800,940,TR,NAB,3115,Table Classroom,36,
+20044,CS,2510,1,Computer Programming I,,On Campus,25,1/25/2027,5/18/2027,950,1130,TR,NAB,109,CIS Computer Lab,32,
+20044,CS,2510,1,Computer Programming I,,On Campus,25,1/25/2027,5/18/2027,1140,1240,TR,NAB,109,CIS Computer Lab,32,
+20048,CS,4100,1,Technical Communications,,On Campus,28,1/25/2027,5/18/2027,1630,1810,MW,NAB,2115,Tablet Classroom,46,
+20122,MA,2010,1,Foundations of Mathematics I,,On Campus,30,1/25/2027,5/18/2027,950,1130,TR,NAB,1113,Tablet Classroom,55,
+20384,MA,2000,2,Applied Statistics,,On Campus,35,1/25/2027,5/18/2027,1630,1810,MW,NAB,2123,Table Classroom,40,
+20385,MA,2500,1,History of Mathematics,,On Campus,30,1/25/2027,5/18/2027,1630,1810,TR,NAB,109,CIS Computer Lab,32,
+20603,MA,4510,HY1,Geometry,,Hybrid,27,1/25/2027,5/18/2027,1630,1810,M,NAB,2119,Tablet Classroom,46,
+20764,MA,2310,4,Calc & Analytic Geometry I,,On Campus,25,1/25/2027,5/18/2027,1440,1620,MW,NAB,3121,Tablet Classroom,46,
+20776,MA,2080,HY1,Precalc/Business & Economics,,Hybrid,27,1/25/2027,5/18/2027,1820,2000,M,NAB,1119,Table Classroom,46,
+20817,MA,3020,1,Foundations of Mathematics II,,On Campus,30,1/25/2027,5/18/2027,1630,1810,TR,NAB,1113,Tablet Classroom,55,
+20822,MA,2000,1,Applied Statistics,,On Campus,35,1/25/2027,5/18/2027,950,1130,MW,NAB,1117,Tablet Classroom,55,
+20923,MA,2000,4,Applied Statistics,,On Campus,35,1/25/2027,5/18/2027,950,1130,TR,NAB,2107,Tablet Classroom,36,
+21040,MA,2090,5,Precalculus,,On Campus,30,1/25/2027,5/18/2027,800,940,MW,NAB,1119,Table Classroom,46,
+21103,CS,2521,HY1,Scientific Programming Python,,Hybrid,25,1/25/2027,5/18/2027,1730,2000,T,NAB,1117,Tablet Classroom,55,
+21207,MA,3250,1,Business Analytics,,On Campus,30,1/25/2027,5/18/2027,1440,1620,MW,NAB,1113,Tablet Classroom,55,
+21294,CS,7520,G02,Project Management,,On Campus,20,1/25/2027,5/18/2027,1800,2030,T,NAB,2125,Table Classroom,27,
+21311,CS,2510,3,Computer Programming I,,On Campus,22,1/25/2027,5/18/2027,1440,1620,TR,NAB,3104,Computer Lab,22,
+21311,CS,2510,3,Computer Programming I,,On Campus,22,1/25/2027,5/18/2027,1630,1730,TR,NAB,3104,Computer Lab,22,
+21376,MA,1020,4,College Algebra,,On Campus,60,1/25/2027,5/18/2027,800,940,TR,NAB,1113,Tablet Classroom,55,
+21513,MA,1020,5,College Algebra,,On Campus,55,1/25/2027,5/18/2027,800,940,MW,NAB,1117,Tablet Classroom,55,
+21898,MA,1020,HY3,College Algebra,,Hybrid,25,1/25/2027,5/18/2027,1820,2000,W,NAB,2129,Tablet Classroom,30,
+21899,MA,2080,HY2,Precalc/Business & Economics,,Hybrid,25,1/25/2027,5/18/2027,1820,2000,W,NAB,3107,Table Classroom,32,
