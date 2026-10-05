@@ -1,0 +1,3 @@
+https://towardsdatascience.com/introduction-to-nosql-graph-databases-fb2feac7a36/
+
+nltk is a useful nlp tool kit
