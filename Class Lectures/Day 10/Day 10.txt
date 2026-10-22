@@ -1,0 +1,71 @@
+================================================================================
+MACHINE LEARNING FOUNDATIONS: REGRESSION, FEATURE SELECTION & CLASSIFICATION
+================================================================================
+
+1. FUNDAMENTALS OF SUPERVISED LEARNING
+--------------------------------------------------------------------------------
+Supervised learning maps input features (X) to a target output (Y).
+
+Train / Test Split:
+  - Training Data (80%): Used to train the model and determine parameter weights.
+  - Testing Data (20%): Used to evaluate performance on unseen data (e.g., R^2 metric).
+
+Key Definitions:
+  - Feature Space (X): The set of input features X = {x1, x2, x3, ..., xn}.
+  - Target Variable (Y): The output or value being predicted.
+
+
+2. REGRESSION ANALYSIS
+--------------------------------------------------------------------------------
+Goal: Predict a continuous numeric target variable Y using input features X.
+Core Question: "How does each feature lead to the target output?"
+
+Linear Regression Formula:
+  Predicted Y = b0 + (b1 * x1) + (b2 * x2) + (b3 * x3) + ... + (bn * xn)
+
+Where:
+  - b0 = Intercept (baseline value when all features are 0)
+  - b1, b2, b3 = Feature coefficients representing the weight/effect of each feature
+
+
+3. HOUSING DATASET EXAMPLE
+--------------------------------------------------------------------------------
+Features (X):                 Target (Y):
+----------------------------------------------------------------
+# Sinks (x1) | Sq Ft (x2) | Bathrooms (x3) | Bedrooms (x4) | Price
+----------------------------------------------------------------
+2            | 200        | 1              | 1             | $300,000
+5            | 450        | 2              | 1             | $500,000
+4            | 1,000      | 3              | 3             | $1,500,000
+
+Example Prediction Equation:
+  Predicted Price = b0 + (b1 * Sinks) + (b2 * SqFt) + (b3 * Bathrooms)
+
+
+4. FEATURE SELECTION & CORRELATION ANALYSIS
+--------------------------------------------------------------------------------
+Goal: Select features that best explain Y while avoiding feature redundancy.
+
+Correlation Matrix:
+      | x1   | x2   | x3   | Y
+  ----+------+------+------+------
+  x1  | 1.00 | 0.20 | 0.70 | 0.70
+  x2  | 0.20 | 1.00 | 0.30 | 0.10
+  x3  | 0.70 | 0.30 | 1.00 | 0.65
+  Y   | 0.70 | 0.10 | 0.65 | 1.00
+
+Analysis:
+  - x1 & Y (r = 0.70): Strong relationship with target. Good predictor.
+  - x3 & Y (r = 0.65): Strong relationship with target. Good predictor.
+  - x1 & x3 (r = 0.70): High cross-correlation (multicollinearity). Indicates redundancy.
+  - x2 & Y (r = 0.10): Low correlation with target. Weak predictor.
+
+
+5. REGRESSION VS CLASSIFICATION
+--------------------------------------------------------------------------------
+Feature       | Regression                  | Classification
+--------------+-----------------------------+-----------------------------------
+Output        | Continuous values           | Categorical / Discrete classes
+Example Target| Predicting house price ($)  | Predicting Tier (Low / Med / High)
+Goal          | Predict numeric quantity    | Assign data to discrete categories
+================================================================================
