@@ -1,6 +1,4 @@
-============================================================
-CHAPTER 1: INTRODUCTION — WHAT IS MACHINE LEARNING?
-============================================================
+# Chapter 1: Introduction — What is Machine Learning?
 
 1. WHAT IS MACHINE LEARNING?
 
@@ -31,20 +29,14 @@ we train a model using examples of spam and non-spam emails.
 
 The model learns patterns and uses them to classify new emails.
 
-
-============================================================
-CHAPTER 2: THE TWO MAIN TYPES OF MACHINE LEARNING
-============================================================
+# Chapter 2: the Two Main Types of Machine Learning
 
 Machine learning is generally divided into two major categories:
 
 1. SUPERVISED LEARNING
 2. UNSUPERVISED LEARNING
 
-
-------------------------------------------------------------
-A. SUPERVISED LEARNING
-------------------------------------------------------------
+## A. Supervised Learning
 
 Supervised learning uses labeled training data.
 
@@ -64,8 +56,10 @@ Important terminology:
 
 General structure:
 
-    INPUT FEATURES  --->  MACHINE LEARNING MODEL  --->  TARGET
+```
+INPUT FEATURES  --->  MACHINE LEARNING MODEL  --->  TARGET
 
+```
 Example 1: House Price Prediction
 
 Input features:
@@ -93,10 +87,7 @@ Target:
 The model learns from labeled examples and predicts the class
 of a new animal.
 
-
-------------------------------------------------------------
-B. UNSUPERVISED LEARNING
-------------------------------------------------------------
+## B. Unsupervised Learning
 
 Unsupervised learning uses data without known target labels.
 
@@ -139,20 +130,14 @@ Unsupervised Learning:
 - Has no predefined target.
 - Attempts to discover hidden structures.
 
-
-============================================================
-CHAPTER 3: REGRESSION VS. CLASSIFICATION
-============================================================
+# Chapter 3: Regression vs. Classification
 
 Supervised learning has two major problem categories:
 
 1. REGRESSION
 2. CLASSIFICATION
 
-
-------------------------------------------------------------
-A. REGRESSION
-------------------------------------------------------------
+## A. Regression
 
 Regression predicts a continuous numerical value.
 
@@ -173,10 +158,7 @@ $350,000
 
 The output is a numerical value rather than a category.
 
-
-------------------------------------------------------------
-B. CLASSIFICATION
-------------------------------------------------------------
+## B. Classification
 
 Classification predicts a discrete categorical label.
 
@@ -213,10 +195,7 @@ IMPORTANT DIFFERENCE:
 Regression = Predicts numerical values.
 Classification = Predicts categories or labels.
 
-
-============================================================
-CHAPTER 4: LINEAR REGRESSION
-============================================================
+# Chapter 4: Linear Regression
 
 Linear regression is one of the fundamental machine learning
 algorithms.
@@ -229,8 +208,10 @@ The algorithm attempts to fit a line to the training data.
 
 SIMPLE LINEAR REGRESSION EQUATION:
 
-    y = mx + b
+```
+y = mx + b
 
+```
 Where:
 - y = Predicted output.
 - x = Input variable.
@@ -256,12 +237,16 @@ and the regression line.
 
 The squared error for one observation is:
 
-    Error = (Actual Value - Predicted Value)^2
+```
+Error = (Actual Value - Predicted Value)^2
 
+```
 The total squared error is:
 
-    SSE = Σ(yᵢ - ŷᵢ)²
+```
+SSE = Σ(yᵢ - ŷᵢ)²
 
+```
 Where:
 - yᵢ = Actual value.
 - ŷᵢ = Predicted value.
@@ -289,8 +274,10 @@ Predicting height using:
 
 A general equation is:
 
-    y = b₀ + b₁x₁ + b₂x₂ + ... + bₙxₙ
+```
+y = b₀ + b₁x₁ + b₂x₂ + ... + bₙxₙ
 
+```
 Where:
 - y = Predicted output.
 - b₀ = Intercept.
@@ -302,10 +289,7 @@ Many more complex machine learning algorithms, including
 neural networks, extend the general idea of learning
 relationships between inputs and outputs.
 
-
-============================================================
-CHAPTER 5: LOGISTIC REGRESSION
-============================================================
+# Chapter 5: Logistic Regression
 
 Logistic regression is a classification algorithm.
 
@@ -321,8 +305,10 @@ regression uses a SIGMOID FUNCTION.
 
 SIGMOID FUNCTION:
 
-    σ(z) = 1 / (1 + e⁻ᶻ)
+```
+σ(z) = 1 / (1 + e⁻ᶻ)
 
+```
 The sigmoid function converts an input into a value
 between 0 and 1.
 
@@ -334,8 +320,10 @@ to a particular category.
 
 Predicted probability:
 
-    P(Class 1) = 0.80
+```
+P(Class 1) = 0.80
 
+```
 This means the model estimates an 80% probability
 of belonging to Class 1.
 
@@ -343,9 +331,11 @@ A classification threshold can then be used.
 
 For example:
 
-    Probability >= 0.50  --->  Class 1
-    Probability <  0.50  --->  Class 0
+```
+Probability >= 0.50  --->  Class 1
+Probability <  0.50  --->  Class 0
 
+```
 The threshold can be adjusted depending on the problem.
 
 IMPORTANT:
@@ -353,10 +343,7 @@ IMPORTANT:
 - Logistic Regression estimates class probabilities.
 - Logistic Regression is used for classification.
 
-
-============================================================
-CHAPTER 6: K-NEAREST NEIGHBORS (KNN)
-============================================================
+# Chapter 6: K-nearest Neighbors (KNN)
 
 K-Nearest Neighbors (KNN) is a simple and intuitive algorithm
 that can be used for BOTH regression and classification.
@@ -416,8 +403,10 @@ Three nearest people have weights:
 
 Prediction:
 
-    (150 + 160 + 170) / 3 = 160 lbs
+```
+(150 + 160 + 170) / 3 = 160 lbs
 
+```
 CHOOSING K:
 
 K is a HYPERPARAMETER.
@@ -456,10 +445,7 @@ IMPORTANT:
 KNN is based on the idea that observations that are close
 together are likely to have similar characteristics.
 
-
-============================================================
-CHAPTER 7: SUPPORT VECTOR MACHINES (SVM)
-============================================================
+# Chapter 7: Support Vector Machines (SVM)
 
 Support Vector Machines (SVM) are supervised machine learning
 algorithms originally designed for classification.
@@ -534,8 +520,10 @@ A model might use:
 
 A more complex feature could be:
 
-    BMI = Weight / Height²
+```
+BMI = Weight / Height²
 
+```
 This creates an additional feature that may help
 separate observations.
 
@@ -546,10 +534,7 @@ IMPORTANT:
 SVM attempts to find a decision boundary with a large margin,
 using support vectors to define that boundary.
 
-
-============================================================
-CHAPTER 8: NAIVE BAYES CLASSIFIER
-============================================================
+# Chapter 8: Naive Bayes Classifier
 
 Naive Bayes is a classification algorithm based on
 BAYES' THEOREM.
@@ -562,8 +547,10 @@ It is frequently used for:
 
 BAYES' THEOREM:
 
-    P(A|B) = [P(B|A) × P(A)] / P(B)
+```
+P(A|B) = [P(B|A) × P(A)] / P(B)
 
+```
 Where:
 - P(A|B) = Probability of A given B.
 - P(B|A) = Probability of B given A.
@@ -603,10 +590,7 @@ Naive Bayes is particularly useful for text classification
 because it can efficiently calculate class probabilities
 using word frequencies.
 
-
-============================================================
-CHAPTER 9: DECISION TREES
-============================================================
+# Chapter 9: Decision Trees
 
 A decision tree is a supervised learning algorithm that
 makes predictions using a sequence of decisions.
@@ -644,16 +628,18 @@ EXAMPLE: HEART ATTACK RISK
 
 A decision tree might ask:
 
-    Is the patient's age above 50?
-             |
-       YES / NO
-             |
-    Does the patient have high blood pressure?
-             |
-       YES / NO
-             |
-    Determine risk category.
+```
+Is the patient's age above 50?
+         |
+   YES / NO
+         |
+Does the patient have high blood pressure?
+         |
+   YES / NO
+         |
+Determine risk category.
 
+```
 The actual tree can contain many more conditions.
 
 PURITY:
@@ -670,10 +656,7 @@ IMPORTANT:
 Decision trees make predictions using understandable
 sequences of conditions and decisions.
 
-
-============================================================
-CHAPTER 10: ENSEMBLE LEARNING
-============================================================
+# Chapter 10: Ensemble Learning
 
 An ENSEMBLE ALGORITHM combines multiple machine learning
 models to create a stronger overall model.
@@ -689,10 +672,7 @@ The transcript introduces two major ensemble approaches:
 1. BAGGING
 2. BOOSTING
 
-
-============================================================
-CHAPTER 11: BAGGING AND RANDOM FORESTS
-============================================================
+# Chapter 11: Bagging and Random Forests
 
 BAGGING stands for Bootstrap Aggregating.
 
@@ -744,10 +724,7 @@ IMPORTANT:
 Random Forests generally train trees independently
 and combine their predictions.
 
-
-============================================================
-CHAPTER 12: BOOSTING AND STRONG LEARNERS
-============================================================
+# Chapter 12: Boosting and Strong Learners
 
 BOOSTING is another ensemble learning technique.
 
@@ -804,10 +781,7 @@ Boosting:
 - Each new model focuses on previous errors.
 - Combines the models into a stronger predictor.
 
-
-============================================================
-CHAPTER 13: NEURAL NETWORKS AND DEEP LEARNING
-============================================================
+# Chapter 13: Neural Networks and Deep Learning
 
 Neural networks are powerful machine learning models
 inspired by the way biological nervous systems process
@@ -873,10 +847,7 @@ intermediate features from the input data.
 They do this using layers of interconnected computational
 units called neurons.
 
-
-------------------------------------------------------------
-PERCEPTRONS
-------------------------------------------------------------
+## Perceptrons
 
 A perceptron is a basic computational unit used
 in neural networks.
@@ -889,18 +860,18 @@ to produce an output.
 
 A simplified structure:
 
-    INPUT FEATURES
-          |
-          v
-      PERCEPTRON
-          |
-          v
-        OUTPUT
+```
+INPUT FEATURES
+      |
+      v
+  PERCEPTRON
+      |
+      v
+    OUTPUT
 
 
-------------------------------------------------------------
-HIDDEN LAYERS
-------------------------------------------------------------
+```
+## Hidden Layers
 
 A hidden layer is a layer between the input and output
 layers of a neural network.
@@ -926,10 +897,7 @@ explicitly define every hidden feature.
 The network learns useful intermediate features
 during training.
 
-
-------------------------------------------------------------
-DEEP LEARNING
-------------------------------------------------------------
+## Deep Learning
 
 Deep learning refers to neural networks containing
 multiple layers.
@@ -942,24 +910,26 @@ from the previous layer.
 
 Simplified example:
 
-    INPUT PIXELS
-         |
-         v
-    HIDDEN LAYER 1
-    Basic patterns and edges
-         |
-         v
-    HIDDEN LAYER 2
-    More complex shapes
-         |
-         v
-    HIDDEN LAYER 3
-    Higher-level patterns
-         |
-         v
-       OUTPUT
-    Predicted category
+```
+INPUT PIXELS
+     |
+     v
+HIDDEN LAYER 1
+Basic patterns and edges
+     |
+     v
+HIDDEN LAYER 2
+More complex shapes
+     |
+     v
+HIDDEN LAYER 3
+Higher-level patterns
+     |
+     v
+   OUTPUT
+Predicted category
 
+```
 The actual features learned by the network are not
 always directly interpretable.
 
@@ -979,10 +949,7 @@ Deep Learning:
 Neural networks with multiple layers that learn
 increasingly complex representations.
 
-
-============================================================
-CHAPTER 14: UNSUPERVISED LEARNING — REVISITED
-============================================================
+# Chapter 14: Unsupervised Learning — Revisited
 
 Supervised learning requires a specific target variable.
 
@@ -1001,10 +968,7 @@ The process of grouping observations based on similarity.
 Unlike classification, clustering does not require
 predefined labels.
 
-
-============================================================
-CHAPTER 15: CLUSTERING AND K-MEANS
-============================================================
+# Chapter 15: Clustering and K-means
 
 CLUSTERING VS. CLASSIFICATION
 
@@ -1030,10 +994,7 @@ Clustering:
 Given unlabeled animal pictures, group similar pictures
 together without knowing the categories beforehand.
 
-
-------------------------------------------------------------
-K-MEANS CLUSTERING
-------------------------------------------------------------
+## K-means Clustering
 
 K-means is one of the most common clustering algorithms.
 
@@ -1099,10 +1060,7 @@ OTHER CLUSTERING ALGORITHMS:
    and does not require specifying the number of
    clusters beforehand.
 
-
-============================================================
-CHAPTER 16: DIMENSIONALITY REDUCTION
-============================================================
+# Chapter 16: Dimensionality Reduction
 
 Dimensionality reduction is the process of reducing
 the number of features (dimensions) in a dataset
@@ -1141,10 +1099,7 @@ BENEFITS:
 - Can be used as a preprocessing step before supervised
   learning.
 
-
-============================================================
-CHAPTER 17: PRINCIPAL COMPONENT ANALYSIS (PCA)
-============================================================
+# Chapter 17: Principal Component Analysis (PCA)
 
 Principal Component Analysis (PCA) is a dimensionality
 reduction technique.
@@ -1185,10 +1140,7 @@ a new component representing their shared variation.
 This may allow us to reduce the number of features
 without losing much useful information.
 
-
-------------------------------------------------------------
-HOW PCA WORKS
-------------------------------------------------------------
+## How PCA Works
 
 1. Examine the relationships and variation among features.
 2. Identify directions in which the data varies the most.
@@ -1228,16 +1180,11 @@ IMPORTANT:
 PCA reduces the number of dimensions while attempting
 to preserve the most important variation in the data.
 
-
-============================================================
-FINAL REVIEW: MACHINE LEARNING ALGORITHM COMPARISON
-============================================================
+# Final Review: Machine Learning Algorithm Comparison
 
 SUPERVISED LEARNING
-------------------------------------------------------------
 
 Algorithm              Purpose
-------------------------------------------------------------
 Linear Regression      Predict continuous numerical values.
 Logistic Regression    Predict class probabilities.
 KNN                    Predict using nearby observations.
@@ -1249,10 +1196,8 @@ Boosting               Sequentially improve weak models.
 Neural Networks        Learn complex patterns and features.
 
 UNSUPERVISED LEARNING
-------------------------------------------------------------
 
 Algorithm              Purpose
-------------------------------------------------------------
 K-Means                Group data into K clusters.
 Hierarchical           Build a hierarchy of clusters.
 DBSCAN                 Find density-based clusters.
@@ -1263,10 +1208,7 @@ PCA is a dimensionality reduction technique rather than
 a clustering algorithm. It is commonly used as a
 preprocessing technique.
 
-
-============================================================
-IMPORTANT CONCEPTS TO REMEMBER
-============================================================
+# Important Concepts to Remember
 
 1. Machine Learning:
    Learning patterns from data to make predictions
@@ -1340,20 +1282,19 @@ IMPORTANT CONCEPTS TO REMEMBER
     Finding directions that capture the most variance
     in a dataset.
 
+# The Big Picture
 
-============================================================
-THE BIG PICTURE
-============================================================
-
-                 MACHINE LEARNING
-                        |
-             +----------+----------+
-             |                     |
-       SUPERVISED             UNSUPERVISED
-        LEARNING                LEARNING
-             |                     |
-       +-----+-----+          +----+---------+
-       |           |          |              |
+```
+             MACHINE LEARNING
+                    |
+         +----------+----------+
+         |                     |
+   SUPERVISED             UNSUPERVISED
+    LEARNING                LEARNING
+         |                     |
+   +-----+-----+          +----+---------+
+   |           |          |              |
+```
    REGRESSION  CLASSIFICATION CLUSTERING  DIMENSIONALITY
        |           |          |           REDUCTION
        |           |          |              |
@@ -1378,4 +1319,3 @@ Others reduce the complexity of data.
 
 The correct algorithm depends on the problem,
 the type of data, and the result we want to obtain.
-============================================================

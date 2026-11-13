@@ -1,6 +1,4 @@
-============================================================
-CHAPTER 1: INTRODUCTION — HANDWRITTEN DIGIT RECOGNITION
-============================================================
+# Chapter 1: Introduction — Handwritten Digit Recognition
 
 1. THE PROBLEM: RECOGNIZING HANDWRITTEN DIGITS
 
@@ -43,9 +41,7 @@ The challenge is that a computer sees individual pixel values
 rather than an understanding of visual characteristics like
 lines, loops, or edges.
 
-============================================================
-CHAPTER 2: SERIES PREVIEW — WHAT IS A NEURAL NETWORK?
-============================================================
+# Chapter 2: Series Preview — What is a Neural Network?
 
 1. PURPOSE OF THE SERIES
 
@@ -90,9 +86,7 @@ This simplest form is:
 Neural networks are inspired by the brain, but they are a
 mathematical abstraction, not a biological simulation.
 
-============================================================
-CHAPTER 3: WHAT ARE NEURONS?
-============================================================
+# Chapter 3: What Are Neurons?
 
 1. DEFINITION OF A NEURON
 
@@ -109,8 +103,10 @@ The network starts with neurons corresponding to each of the
 
 Total input neurons:
 
-    28 x 28 = 784 neurons
+```
+28 x 28 = 784 neurons
 
+```
 Each input neuron holds a number representing the grayscale value
 of the corresponding pixel:
 
@@ -125,9 +121,7 @@ The activation of a neuron is the number it holds.
 Image to keep in mind: each neuron is "lit up" when its
 activation is a high number (close to 1).
 
-============================================================
-CHAPTER 4: INTRODUCING LAYERS
-============================================================
+# Chapter 4: Introducing Layers
 
 1. INPUT LAYER
 
@@ -191,9 +185,7 @@ If you feed in an image:
 
 The network shown has already been trained to recognize digits.
 
-============================================================
-CHAPTER 5: WHY LAYERS?
-============================================================
+# Chapter 5: Why Layers?
 
 1. WHY A LAYERED STRUCTURE?
 
@@ -264,9 +256,7 @@ Layered abstraction is useful beyond image recognition:
 The goal of any layer is to have a mechanism that can combine
 pixels into edges, edges into patterns, and patterns into digits.
 
-============================================================
-CHAPTER 6: EDGE DETECTION EXAMPLE
-============================================================
+# Chapter 6: Edge Detection Example
 
 1. THE GOAL
 
@@ -313,10 +303,12 @@ real number line into the range between 0 and 1.
 
 The sigmoid function (logistic curve) does this:
 
-    Very negative inputs -> close to 0
-    Positive inputs -> close to 1
-    Steadily increases around input 0
+```
+Very negative inputs -> close to 0
+Positive inputs -> close to 1
+Steadily increases around input 0
 
+```
 The neuron's activation is basically a measure of how positive
 the weighted sum is.
 
@@ -334,9 +326,7 @@ This additional number is called the bias.
 - Bias tells you how high the weighted sum must be before the
   neuron becomes meaningfully active.
 
-============================================================
-CHAPTER 7: COUNTING WEIGHTS AND BIASES
-============================================================
+# Chapter 7: Counting Weights and Biases
 
 1. CONNECTIONS PER NEURON
 
@@ -350,9 +340,11 @@ Each neuron also has its own bias.
 Hidden layer with 16 neurons, each connected to all 784 input
 neurons:
 
-    784 x 16 weights
-    + 16 biases
+```
+784 x 16 weights
++ 16 biases
 
+```
 That is just the connections from the first layer to the second.
 
 3. TOTAL PARAMETERS
@@ -365,9 +357,7 @@ weights and biases.
 13,000 knobs and dials that can be tweaked to make the network
 behave in different ways.
 
-============================================================
-CHAPTER 8: HOW LEARNING RELATES
-============================================================
+# Chapter 8: How Learning Relates
 
 1. WHAT LEARNING MEANS
 
@@ -398,9 +388,7 @@ When the network works but not for expected reasons:
 - Digging into what weights and biases are doing challenges
   assumptions and exposes the full space of possible solutions.
 
-============================================================
-CHAPTER 9: NOTATION AND LINEAR ALGEBRA
-============================================================
+# Chapter 9: Notation and Linear Algebra
 
 1. THE NEED FOR COMPACT NOTATION
 
@@ -444,9 +432,7 @@ extremely tight expression.
 This makes code simpler and faster because many libraries optimize
 matrix multiplication.
 
-============================================================
-CHAPTER 10: RECAP
-============================================================
+# Chapter 10: Recap
 
 1. NEURONS AS FUNCTIONS
 
@@ -482,9 +468,7 @@ looking at data?
 
 This is covered in the next video.
 
-============================================================
-CHAPTER 11: SOME FINAL WORDS
-============================================================
+# Chapter 11: Some Final Words
 
 1. SUBSCRIPTION
 
@@ -499,9 +483,7 @@ Thank you to everyone supporting these videos on Patreon.
 Progress on the probability series has been slow this summer but
 will resume after this project. Patrons can look out for updates.
 
-============================================================
-CHAPTER 12: RELU VS SIGMOID
-============================================================
+# Chapter 12: RELU vs Sigmoid
 
 1. SIGMOID
 
@@ -519,8 +501,10 @@ ReLU (Rectified Linear Unit) is much easier to train.
 
 ReLU takes the max of zero and a value (the weighted sum):
 
-    max(0, value)
+```
+max(0, value)
 
+```
 Partially motivated by biological analogy:
 
 - If activation passes a threshold -> identity function
@@ -534,12 +518,9 @@ Sigmoids did not help training and were difficult to train at
 some point. People tried ReLU, and it happened to work very well
 for incredibly deep neural networks.
 
-============================================================
-FINAL REVIEW: KEY CONCEPTS
-============================================================
+# Final Review: Key Concepts
 
 Algorithm / Component    Purpose
------------------------------------------------------------
 Neuron                   Holds a number between 0 and 1 (its activation)
 Input Layer              784 neurons, one per 28x28 pixel
 Output Layer             10 neurons, one per digit 0-9
@@ -552,9 +533,7 @@ Weight Matrix            Compact representation of all weights
 Activation Vector        Column vector of all activations in a layer
 Bias Vector              Vector of all biases added to matrix product
 
-============================================================
-IMPORTANT CONCEPTS TO REMEMBER
-============================================================
+# Important Concepts to Remember
 
 1. Neuron: A unit that holds a number between 0 and 1, called its activation.
 
@@ -594,20 +573,20 @@ IMPORTANT CONCEPTS TO REMEMBER
 15. Function View: The entire network is a function mapping 784 inputs to
     10 outputs.
 
-============================================================
-THE BIG PICTURE
-============================================================
+# The Big Picture
 
-                    NEURAL NETWORK
-                           |
-             +-------------+-------------+
-             |                           |
-       INPUT LAYER                 OUTPUT LAYER
-    784 neurons (pixels)        10 neurons (digits 0-9)
-             |                           |
-             v                           v
-    +--------+--------+           brightest neuron = prediction
-    |                 |
+```
+                NEURAL NETWORK
+                       |
+         +-------------+-------------+
+         |                           |
+   INPUT LAYER                 OUTPUT LAYER
+784 neurons (pixels)        10 neurons (digits 0-9)
+         |                           |
+         v                           v
++--------+--------+           brightest neuron = prediction
+|                 |
+```
 HIDDEN LAYER 1    HIDDEN LAYER 2
 16 neurons         16 neurons
 Edges, patterns    Combinations of patterns
@@ -626,5 +605,3 @@ A neural network is a function that transforms 784 pixel values
 into 10 digit probabilities through layers of interconnected
 neurons, each computing a weighted sum plus bias passed through
 an activation function.
-
-============================================================

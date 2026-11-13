@@ -1,6 +1,4 @@
-============================================================
-CHAPTER 1: INTRODUCTION — HOW NEURAL NETWORKS LEARN
-============================================================
+# Chapter 1: Introduction — How Neural Networks Learn
 
 1. PURPOSE OF THIS VIDEO
 
@@ -20,9 +18,7 @@ This video has two main goals:
 As a reminder, our goal here is the classic example of handwritten
 digit recognition, the hello world of neural networks.
 
-============================================================
-CHAPTER 2: RECAP — NETWORK STRUCTURE
-============================================================
+# Chapter 2: Recap — Network Structure
 
 1. INPUT LAYER
 
@@ -66,9 +62,7 @@ that maybe:
 - The last layer could just piece together those patterns to
   recognize digits.
 
-============================================================
-CHAPTER 3: USING TRAINING DATA
-============================================================
+# Chapter 3: Using Training Data
 
 1. HOW THE NETWORK LEARNS
 
@@ -102,9 +96,7 @@ sci-fi premise, and a lot more like a calculus exercise.
 Basically it comes down to finding the minimum of a certain
 function.
 
-============================================================
-CHAPTER 4: COST FUNCTIONS
-============================================================
+# Chapter 4: Cost Functions
 
 1. INITIALIZATION
 
@@ -162,9 +154,7 @@ crappy job it's doing isn't very helpful.
 You want to tell it how to change those weights and biases so that
 it gets better.
 
-============================================================
-CHAPTER 5: GRADIENT DESCENT — ONE INPUT
-============================================================
+# Chapter 5: Gradient Descent — One Input
 
 1. FROM COST TO OPTIMIZATION
 
@@ -215,9 +205,7 @@ proportional to the slope, then when the slope is flattening out
 towards the minimum, your steps get smaller and smaller, and that
 kind of helps you from overshooting.
 
-============================================================
-CHAPTER 6: GRADIENT DESCENT — MULTIPLE INPUTS
-============================================================
+# Chapter 6: Gradient Descent — Multiple Inputs
 
 1. TWO-INPUT FUNCTION
 
@@ -340,9 +328,7 @@ adjustment to some other weight.
 
 Some of these connections just matter more for our training data.
 
-============================================================
-CHAPTER 7: GRADIENT VECTOR INTERPRETATION
-============================================================
+# Chapter 7: Gradient Vector Interpretation
 
 1. RELATIVE IMPORTANCE
 
@@ -371,9 +357,7 @@ variable have 3 times the importance as changes to the second
 variable, that at least in the neighborhood of the relevant input,
 nudging the x-value carries a lot more bang for your buck.
 
-============================================================
-CHAPTER 8: GRADIENT DESCENT RECAP
-============================================================
+# Chapter 8: Gradient Descent Recap
 
 1. THREE LAYERS OF COMPLEXITY
 
@@ -395,9 +379,7 @@ fastest change to the value of the cost function, which you might
 interpret as saying which changes to which weights matter the
 most.
 
-============================================================
-CHAPTER 9: ANALYZING THE NETWORK
-============================================================
+# Chapter 9: Analyzing the Network
 
 1. PERFORMANCE ON UNSEEN DATA
 
@@ -495,9 +477,7 @@ capable of solving some interesting problems, but the more you
 dig into what those hidden layers are really doing, the less
 intelligent it seems.
 
-============================================================
-CHAPTER 10: LEARNING MORE — RESOURCES
-============================================================
+# Chapter 10: Learning More — Resources
 
 1. ACTIVE ENGAGEMENT
 
@@ -530,9 +510,7 @@ A couple other resources are linked in the description, including
 the phenomenal and beautiful blog post by Chris Ola and the
 articles in Distill.
 
-============================================================
-CHAPTER 11: LISHA LI INTERVIEW — MEMORIZATION VS GENERALIZATION
-============================================================
+# Chapter 11: Lisha Li Interview — Memorization vs Generalization
 
 1. SHUFFLED LABELS EXPERIMENT
 
@@ -587,9 +565,7 @@ landscape, the local minima that these networks tend to learn are
 actually of equal quality, so in some sense if your dataset is
 structured, you should be able to find that much more easily.
 
-============================================================
-CHAPTER 12: CLOSING THOUGHTS
-============================================================
+# Chapter 12: Closing Thoughts
 
 1. PATREON THANKS
 
@@ -603,12 +579,9 @@ possible without you.
 I also want to give a special thanks to the VC firm Amplify
 Partners and their support of these initial videos in the series.
 
-============================================================
-FINAL REVIEW: KEY CONCEPTS
-============================================================
+# Final Review: Key Concepts
 
 Concept / Term              Purpose or Definition
------------------------------------------------------------
 Cost function               Single number measuring how bad weights/biases are
 Gradient descent            Process of nudging inputs by negative gradient to minimize cost
 Gradient                    Vector giving direction of steepest ascent; negative is downhill
@@ -623,9 +596,7 @@ Network parameters          13,000 weights and biases in the example network
 Activation function         Sigmoid or ReLU applied to weighted sum plus bias
 Weight visualization        Pixel pattern showing what a neuron picks up on
 
-============================================================
-IMPORTANT CONCEPTS TO REMEMBER
-============================================================
+# Important Concepts to Remember
 
 1. Cost Function: A single number describing how bad the weights and biases are,
    based on average error over all training examples.
@@ -672,35 +643,35 @@ IMPORTANT CONCEPTS TO REMEMBER
 15. Optimization Landscape: Local minima that networks learn may be of roughly
     equal quality when trained on structured data.
 
-============================================================
-THE BIG PICTURE
-============================================================
+# The Big Picture
 
-                    NEURAL NETWORK LEARNING
-                           |
-             +-------------+-------------+
-             |                           |
-       NETWORK FUNCTION           COST FUNCTION
-    784 inputs -> 10 outputs   13,000 params -> 1 number
-    (pixel values to digits)   (average error over training data)
-             |                           |
-             v                           v
-    WEIGHTS + BIASES          GRADIENT DESCENT
-    ~13,000 parameters        Compute negative gradient
-             |                           |      take small downhill step
-             +-------------+-------------+
-                           |
-                  BACKPROPAGATION
-                  (efficient gradient computation)
-                           |
-                  REPEATED UPDATES
-                           |
-                  LOCAL MINIMUM
-                  (best found weights/biases)
-                           |
-                  EVALUATION
-             on unseen test data (generalization)
+```
+                NEURAL NETWORK LEARNING
+                       |
+         +-------------+-------------+
+         |                           |
+   NETWORK FUNCTION           COST FUNCTION
+784 inputs -> 10 outputs   13,000 params -> 1 number
+(pixel values to digits)   (average error over training data)
+         |                           |
+         v                           v
+WEIGHTS + BIASES          GRADIENT DESCENT
+~13,000 parameters        Compute negative gradient
+         |                           |      take small downhill step
+         +-------------+-------------+
+                       |
+              BACKPROPAGATION
+              (efficient gradient computation)
+                       |
+              REPEATED UPDATES
+                       |
+              LOCAL MINIMUM
+              (best found weights/biases)
+                       |
+              EVALUATION
+         on unseen test data (generalization)
 
+```
 The central idea:
 
 A neural network learns by minimizing a cost function through
@@ -708,5 +679,3 @@ gradient descent. Backpropagation efficiently computes the
 gradient, and repeated small downhill steps adjust all 13,000
 weights and biases until the network performs well on training
 data and hopefully generalizes to new images.
-
-============================================================

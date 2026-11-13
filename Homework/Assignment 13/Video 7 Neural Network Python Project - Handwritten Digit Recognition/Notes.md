@@ -1,6 +1,4 @@
-============================================================
-CHAPTER 1: INTRODUCTION — BUILDING A DIGIT RECOGNITION NETWORK
-============================================================
+# Chapter 1: Introduction — Building a Digit Recognition Network
 
 1. PURPOSE OF THIS VIDEO
 
@@ -49,32 +47,34 @@ Library purposes:
 - cv2 (opencv-python): computer vision, loading and processing images.
 - tensorflow: the machine learning part.
 
-============================================================
-CHAPTER 2: SETUP AND LIBRARIES
-============================================================
+# Chapter 2: Setup and Libraries
 
 1. INSTALLATION
 
 Open command line (Windows) or terminal (Linux/Mac) and type:
 
-    pip install numpy opencv-python matplotlib tensorflow
+```
+pip install numpy opencv-python matplotlib tensorflow
 
+```
 2. IMPORTS
 
-    import cv2
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import tensorflow as tf
-    import os
+```
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+import os
 
-============================================================
-CHAPTER 3: LOADING THE DATASET
-============================================================
+```
+# Chapter 3: Loading the Dataset
 
 1. LOADING MNIST
 
-    mnist = tf.keras.datasets.mnist
+```
+mnist = tf.keras.datasets.mnist
 
+```
 This loads the data set directly from TensorFlow without needing
 to download CSV files and process them.
 
@@ -89,8 +89,10 @@ Split the data into training data and testing data:
 Usually an 80/20 split, but MNIST's load data function already
 splits it into training and testing data.
 
-    (x_train, y_train), (x_test, y_test) = mnist.load_data()
+```
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
 
+```
 - x: the pixel data (the image itself, the handwritten digit).
 - y: the classification (the digit number).
 
@@ -99,9 +101,7 @@ splits it into training and testing data.
 Training data trains the model; testing data evaluates performance
 on unseen data. This is the idea of testing and training.
 
-============================================================
-CHAPTER 4: DATA NORMALIZATION
-============================================================
+# Chapter 4: Data Normalization
 
 1. WHAT NORMALIZATION MEANS
 
@@ -118,9 +118,11 @@ This makes it easier for a neural network to do calculations.
 
 2. NORMALIZING THE DATA
 
-    x_train = tf.keras.utils.normalize(x_train, axis=1)
-    x_test = tf.keras.utils.normalize(x_test, axis=1)
+```
+x_train = tf.keras.utils.normalize(x_train, axis=1)
+x_test = tf.keras.utils.normalize(x_test, axis=1)
 
+```
 Axis=1 means we normalize the pixels, not the digits.
 
 3. PRE-PROCESSING COMPLETE
@@ -128,29 +130,33 @@ Axis=1 means we normalize the pixels, not the digits.
 After normalization, all pre-processing is done. We can now start
 working on the neural network.
 
-============================================================
-CHAPTER 5: BUILDING THE MODEL
-============================================================
+# Chapter 5: Building the Model
 
 1. CREATING THE MODEL
 
-    model = tf.keras.models.Sequential()
+```
+model = tf.keras.models.Sequential()
 
+```
 Sequential is the basic sequential neural network model.
 
 2. ADDING LAYERS
 
 Flatten layer:
 
-    model.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
+```
+model.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
 
+```
 A flattened layer turns a 28x28 grid into one flat line of 784
 pixels instead of having a grid.
 
 Dense layer (hidden layer 1):
 
-    model.add(tf.keras.layers.Dense(128, activation='relu'))
+```
+model.add(tf.keras.layers.Dense(128, activation='relu'))
 
+```
 - 128 units.
 - ReLU activation (rectified linear unit): zero if negative,
   linear increase if positive.
@@ -161,8 +167,10 @@ Same as above — another 128-unit ReLU dense layer.
 
 Dense layer (output):
 
-    model.add(tf.keras.layers.Dense(10, activation='softmax'))
+```
+model.add(tf.keras.layers.Dense(10, activation='softmax'))
 
+```
 - 10 units representing digits 0-9.
 - Softmax activation: makes all 10 outputs add up to 1,
   interpretable as confidence/probability for each digit.
@@ -176,33 +184,37 @@ This video doesn't go deep into theory (activation functions,
 optimizers, loss functions, layer types). It just builds and uses
 the model.
 
-============================================================
-CHAPTER 6: TRAINING THE MODEL
-============================================================
+# Chapter 6: Training the Model
 
 1. COMPILING THE MODEL
 
-    model.compile(
-        optimizer='adam',
-        loss='sparse_categorical_crossentropy',
-        metrics=['accuracy']
-    )
+```
+model.compile(
+    optimizer='adam',
+    loss='sparse_categorical_crossentropy',
+    metrics=['accuracy']
+)
 
+```
 - Optimizer: adam.
 - Loss function: sparse categorical cross entropy.
 - Metric: accuracy.
 
 2. FITTING (TRAINING) THE MODEL
 
-    model.fit(x_train, y_train, epochs=3)
+```
+model.fit(x_train, y_train, epochs=3)
 
+```
 - Epochs: how many times the model sees the same data over again.
 - 3 epochs is enough for this task.
 
 3. SAVING THE MODEL
 
-    model.save('handwritten.model')
+```
+model.save('handwritten.model')
 
+```
 Save after training so we don't need to retrain every time.
 
 4. NOTE ON OVERKILL
@@ -216,35 +228,37 @@ pooling would be even more professional but over the top.
 
 Epoch 1 out of 3, etc. Training is fast.
 
-============================================================
-CHAPTER 7: SAVING THE MODEL
-============================================================
+# Chapter 7: Saving the Model
 
 1. LOADING THE MODEL
 
 Instead of retraining every time, load the saved model:
 
-    model = tf.keras.models.load_model('handwritten.model')
+```
+model = tf.keras.models.load_model('handwritten.model')
 
+```
 2. EVALUATING THE MODEL
 
-    loss, accuracy = model.evaluate(x_test, y_test)
+```
+loss, accuracy = model.evaluate(x_test, y_test)
 
+```
 - Low loss is good.
 - High accuracy is good (1 = 100% accuracy).
 
 Example results: loss ~0.09, accuracy ~97%. That means about 3%
 were classified incorrectly. No model is perfect.
 
-============================================================
-CHAPTER 8: MODEL EVALUATION
-============================================================
+# Chapter 8: Model Evaluation
 
 1. PRINTING METRICS
 
-    print(loss)
-    print(accuracy)
+```
+print(loss)
+print(accuracy)
 
+```
 These metrics tell us how accurate our model is.
 
 2. ACCURACY INTERPRETATION
@@ -252,9 +266,7 @@ These metrics tell us how accurate our model is.
 Accuracy is a number between 0 and 1. One means 100% accuracy.
 In this case, about 97% correct, ~3% incorrect.
 
-============================================================
-CHAPTER 9: CUSTOM DIGIT RECOGNITION
-============================================================
+# Chapter 9: Custom Digit Recognition
 
 1. DRAWING CUSTOM DIGITS
 
@@ -273,17 +285,19 @@ Steps in Paint:
 
 Iterate through files:
 
-    image_number = 1
-    while os.path.isfile(f"digits/digit{image_number}.png"):
-        image = cv2.imread(f"digits/digit{image_number}.png")
-        image = np.invert(image)
-        image = np.array([image])
-        prediction = model.predict(image)
-        print(f"This digit is probably {np.argmax(prediction)}")
-        plt.imshow(image[0], cmap=plt.cm.binary)
-        plt.show()
-        image_number += 1
+```
+image_number = 1
+while os.path.isfile(f"digits/digit{image_number}.png"):
+    image = cv2.imread(f"digits/digit{image_number}.png")
+    image = np.invert(image)
+    image = np.array([image])
+    prediction = model.predict(image)
+    print(f"This digit is probably {np.argmax(prediction)}")
+    plt.imshow(image[0], cmap=plt.cm.binary)
+    plt.show()
+    image_number += 1
 
+```
 Key steps:
 
 - cv2.imread: load the image.
@@ -314,19 +328,14 @@ then 0, 1, 1, 2, 4, 4, 4 (all correct).
 - Restructure the neural network.
 - Use convolutional neural networks with max pooling (overkill).
 
-============================================================
-CHAPTER 10: CONCLUSION
-============================================================
+# Chapter 10: Conclusion
 
 That's how you recognize handwritten digits using neural networks
 in Python. Like, comment, and subscribe for more content.
 
-============================================================
-FINAL REVIEW: KEY CONCEPTS
-============================================================
+# Final Review: Key Concepts
 
 Concept / Term              Purpose or Definition
------------------------------------------------------------
 MNIST data set              Handwritten digits in 28x28 pixel format with labels
 x_train / y_train           Training pixel data and labels
 x_test / y_test             Testing pixel data and labels
@@ -345,9 +354,7 @@ np.invert                   Invert image colors
 np.argmax                   Index of highest activation (predicted digit)
 plt.imshow                  Display image with binary colormap
 
-============================================================
-IMPORTANT CONCEPTS TO REMEMBER
-============================================================
+# Important Concepts to Remember
 
 1. MNIST Data Set: Contains handwritten digits in 28x28 pixel format
    with labels, loaded via tf.keras.datasets.mnist.
@@ -395,15 +402,15 @@ IMPORTANT CONCEPTS TO REMEMBER
 15. Error Handling: Use try/except when loading and predicting custom
     images to handle missing or malformed files gracefully.
 
-============================================================
-THE BIG PICTURE
-============================================================
+# The Big Picture
 
-                    DIGIT RECOGNITION PIPELINE
-                           |
-             +-------------+-------------+
-             |                           |
-       LOAD MNIST                 PRE-PROCESS
+```
+                DIGIT RECOGNITION PIPELINE
+                       |
+         +-------------+-------------+
+         |                           |
+   LOAD MNIST                 PRE-PROCESS
+```
    (x_train, y_train)         normalize pixels to [0, 1]
    (x_test, y_test)             tf.keras.utils.normalize
              |                           |
@@ -432,5 +439,3 @@ recognize handwritten digits. Load MNIST, normalize pixels, build
 a Flatten-Dense-Dense-Dense model with ReLU and softmax, train
 with Adam optimizer for 3 epochs, evaluate on test data, then use
 the model to predict custom drawn digits.
-
-============================================================

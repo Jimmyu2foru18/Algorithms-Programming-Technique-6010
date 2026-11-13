@@ -1,0 +1,19 @@
+Questions I want to ask for the videos
+
+1. How do we determine which machine learning algorithm is appropriate for a particular problem?
+2. What is the kernel trick, and how do we use it? it said somthing like squaring length times with of somthing.
+
+1. Why use a layered structure instead of a single layer?
+2. How is a network "trained" on like what?
+
+1. What is the difference between memorization and generalization in neural networks?
+2. What and whys on why cant gradient descent not find the global minimum?
+
+1. What is backpropagation used for?
+2. Why do connections to brighter neurons have a bigger influence on weight updates?
+3. why are there changes when layers have multiple neurons instead of one?
+
+1. What is RLHF?
+2. Why is it difficult to determine why a model makes specific predictions? like, cant we see why based on data?
+
+1. What optimizer and loss function can we or are we using when compiling a specific model?

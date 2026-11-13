@@ -1,6 +1,4 @@
-============================================================
-CHAPTER 1: INTRODUCTION — BACKPROPAGATION INTUITION
-============================================================
+# Chapter 1: Introduction — Backpropagation Intuition
 
 1. PURPOSE OF THIS VIDEO
 
@@ -14,9 +12,7 @@ without any reference to the formulas.
 Then, for those of you who do want to dive into the math, the next
 video goes into the calculus underlying all this.
 
-============================================================
-CHAPTER 2: RECAP — NETWORK AND COST FUNCTION
-============================================================
+# Chapter 2: Recap — Network and Cost Function
 
 1. THE CLASSIC EXAMPLE
 
@@ -98,9 +94,7 @@ doing, each individual effect it's having is actually pretty
 intuitive, it's just that there's a lot of little adjustments
 getting layered on top of each other.
 
-============================================================
-CHAPTER 3: INTUITIVE WALKTHROUGH EXAMPLE
-============================================================
+# Chapter 3: Intuitive Walkthrough Example
 
 1. DISREGARDING NOTATION
 
@@ -287,9 +281,7 @@ than others, and how they all need to be added together, you
 understand the mechanics for what backpropagation is actually
 doing.
 
-============================================================
-CHAPTER 4: STOCHASTIC GRADIENT DESCENT
-============================================================
+# Chapter 4: Stochastic Gradient Descent
 
 1. COMPUTATIONAL CHALLENGE
 
@@ -384,12 +376,9 @@ will be familiar with is just getting the labeled training data you
 actually need, whether that's having people label tens of thousands
 of images, or whatever other data type you might be dealing with.
 
-============================================================
-FINAL REVIEW: KEY CONCEPTS
-============================================================
+# Final Review: Key Concepts
 
 Concept / Term              Purpose or Definition
------------------------------------------------------------
 Backpropagation             Algorithm computing how each training example wants to nudge weights/biases
 Negative gradient           Averaged desired changes across all training examples
 Gradient component magnitude| Sensitivity of cost function to each weight/bias
@@ -401,9 +390,7 @@ MNIST database              Tens of thousands of labeled handwritten digit image
 Local minimum               Convergence point where network performs well on training data
 Weight influence            Brighter previous neurons = stronger weight effect on cost
 
-============================================================
-IMPORTANT CONCEPTS TO REMEMBER
-============================================================
+# Important Concepts to Remember
 
 1. Backpropagation: The core algorithm behind how neural networks learn; computes
    how each training example wants to nudge every weight and bias.
@@ -452,15 +439,15 @@ IMPORTANT CONCEPTS TO REMEMBER
 15. Proportional Nudges: The size of nudges to output activations should be
     proportional to how far each current value is from its target value.
 
-============================================================
-THE BIG PICTURE
-============================================================
+# The Big Picture
 
-                    BACKPROPAGATION
-                           |
-             +-------------+-------------+
-             |                           |
-       SINGLE EXAMPLE              ALL EXAMPLES AVERAGED
+```
+                BACKPROPAGATION
+                       |
+         +-------------+-------------+
+         |                           |
+   SINGLE EXAMPLE              ALL EXAMPLES AVERAGED
+```
    example wants weight nudges    negative gradient of cost
    (up/down + proportions)         function
              |                           |
@@ -489,5 +476,3 @@ relative proportions cause the most rapid cost decrease. These
 desires are propagated backwards through the network and averaged
 across all examples (or mini-batches in SGD) to form the negative
 gradient that guides learning toward a local minimum.
-
-============================================================

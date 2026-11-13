@@ -1,6 +1,4 @@
-============================================================
-CHAPTER 1: HOW CHATBOTS WORK — THE AUTOCOMPLETE IDEA
-============================================================
+# Chapter 1: How Chatbots Work — the Autocomplete Idea
 
 1. THE SCENARIO
 
@@ -24,9 +22,7 @@ the dialogue.
 
 When you interact with a chatbot, this is exactly what's happening.
 
-============================================================
-CHAPTER 2: LARGE LANGUAGE MODELS
-============================================================
+# Chapter 2: Large Language Models
 
 1. DEFINITION
 
@@ -58,9 +54,7 @@ allow it to select less likely words along the way at random.
 So what this means is even though the model itself is deterministic,
 a given prompt typically gives a different answer each time it's run.
 
-============================================================
-CHAPTER 3: TRAINING AND PARAMETERS
-============================================================
+# Chapter 3: Training and Parameters
 
 1. HOW MODELS LEARN
 
@@ -92,9 +86,7 @@ model gives for the next word on a given input.
 What puts the large in large language model is how they can have
 hundreds of billions of these parameters.
 
-============================================================
-CHAPTER 4: LEARNING THROUGH REFINEMENT
-============================================================
+# Chapter 4: Learning Through Refinement
 
 1. RANDOM INITIALIZATION
 
@@ -135,9 +127,7 @@ Given the huge number of parameters and the enormous amount of
 training data, the scale of computation involved in training a large
 language model is mind-boggling.
 
-============================================================
-CHAPTER 5: COMPUTATIONAL SCALE
-============================================================
+# Chapter 5: Computational Scale
 
 1. THE THOUGHT EXPERIMENT
 
@@ -158,9 +148,7 @@ million years.
 This is only part of the story, though. This whole process is called
 pre-training.
 
-============================================================
-CHAPTER 6: PRE-TRAINING AND RLHF
-============================================================
+# Chapter 6: Pre-training and RLHF
 
 1. PRE-TRAINING GOAL VS ASSISTANT GOAL
 
@@ -184,9 +172,7 @@ computation is only made possible by using special computer chips
 that are optimized for running many operations in parallel, known as
 GPUs.
 
-============================================================
-CHAPTER 7: THE ROLE OF GPUS
-============================================================
+# Chapter 7: the Role of Gpus
 
 1. PARALLELIZATION LIMITATIONS
 
@@ -202,9 +188,7 @@ time.
 But then a team of researchers at Google introduced a new model
 known as the transformer.
 
-============================================================
-CHAPTER 8: TRANSFORMER ARCHITECTURE
-============================================================
+# Chapter 8: Transformer Architecture
 
 1. PARALLEL PROCESSING
 
@@ -246,9 +230,7 @@ as a feed-forward neural network, and this gives the model extra
 capacity to store more patterns about language learned during
 training.
 
-============================================================
-CHAPTER 9: ATTENTION MECHANISM
-============================================================
+# Chapter 9: Attention Mechanism
 
 1. REPEATED FLOW
 
@@ -269,9 +251,7 @@ word.
 Again, the model's prediction looks like a probability for every
 possible next word.
 
-============================================================
-CHAPTER 10: EMERGENT BEHAVIOR
-============================================================
+# Chapter 10: Emergent Behavior
 
 1. DESIGN VS EMERGENCE
 
@@ -291,9 +271,7 @@ What you can see is that when you use large language model
 predictions to autocomplete a prompt, the words that it generates are
 uncannily fluent, fascinating, and even useful.
 
-============================================================
-CHAPTER 11: FURTHER LEARNING RESOURCES
-============================================================
+# Chapter 11: Further Learning Resources
 
 1. DEEP LEARNING SERIES
 
@@ -311,12 +289,9 @@ Sometimes I actually prefer the content I make as a casual talk
 rather than a produced video, but I leave it up to you which one of
 these feels like the better follow-on.
 
-============================================================
-FINAL REVIEW: KEY CONCEPTS
-============================================================
+# Final Review: Key Concepts
 
 Concept / Term              Purpose or Definition
------------------------------------------------------------
 Large language model        Mathematical function predicting next word with probabilities
 Parameters / weights        Continuous values determining model behavior (hundreds of billions)
 Backpropagation             Algorithm tweaking parameters based on training examples
@@ -329,9 +304,7 @@ Attention                   Operation letting word vectors refine meaning from c
 Feed-forward network        Extra capacity to store language patterns
 Emergent behavior           Model behavior emerging from parameter tuning, not explicit design
 
-============================================================
-IMPORTANT CONCEPTS TO REMEMBER
-============================================================
+# Important Concepts to Remember
 
 1. Large Language Model: A sophisticated mathematical function that assigns
    probabilities to all possible next words for any piece of text.
@@ -378,15 +351,15 @@ IMPORTANT CONCEPTS TO REMEMBER
 15. Deterministic but Varied: Models are deterministic but produce different
     outputs on repeated runs due to random sampling of less likely words.
 
-============================================================
-THE BIG PICTURE
-============================================================
+# The Big Picture
 
-                    LARGE LANGUAGE MODEL
-                           |
-             +-------------+-------------+
-             |                           |
-       PRE-TRAINING                 RLHF
+```
+                LARGE LANGUAGE MODEL
+                       |
+         +-------------+-------------+
+         |                           |
+   PRE-TRAINING                 RLHF
+```
    internet text corpus      human feedback on predictions
    (2600+ years to read)     (flags unhelpful outputs)
              |                           |
@@ -421,5 +394,3 @@ backpropagation, refined by RLHF. Transformers process text in
 parallel using word embeddings, attention, and feed-forward
 networks, producing emergent behavior from billions of tuned
 parameters.
-
-============================================================
